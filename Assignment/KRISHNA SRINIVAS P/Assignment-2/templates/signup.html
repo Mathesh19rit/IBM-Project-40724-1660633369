@@ -1,0 +1,55 @@
+{% extends 'home.html' %}
+{% block title %}
+    {{title}}
+{% endblock title %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="../static/signup.css">
+</head>
+<body>
+
+    <div class="gs-neumorphic-main-card-outer-container">
+        <div class="gs-neumorphic-main-card-container">
+            <div class="gs-neumorphic-main-card">
+                <div class="gs-neumorphic-signup gs-form-open">
+                    <div class="gs-neumorphic-signup-login-header gs-open" data-button="gs-neumorphic-signup">Signup</div>
+                    <div class="gs-neumorphic-form-container">
+                        <form>
+                            <input type="text" class="gs-neumorphic-input" placeholder="First Name">
+                            <input type="text" class="gs-neumorphic-input" placeholder="Last Name">
+                            <input type="text" class="gs-neumorphic-input" name="name" placeholder="Username">
+                            <input type="text" class="gs-neumorphic-input"  placeholder="Mobile Number">
+                            <input type="text" class="gs-neumorphic-input" name="email" placeholder="Email">
+                            <input type="password" class="gs-neumorphic-input" name="password" placeholder="Password">
+                            <input type="password" class="gs-neumorphic-input" placeholder="Confirm Password">
+                            <button class="gs-neumorphic-button">Signup</button>
+                        </form>
+                    </div>
+                </div>
+    
+                <div class="gs-neumorphic-login">
+                    <div class="gs-neumorphic-signup-login-header" data-button="gs-neumorphic-login">Login</div>
+                    <div class="gs-neumorphic-form-container">
+                        <form>
+                            <input type="text" class="gs-neumorphic-input" placeholder="Username">
+                            <input type="password" class="gs-neumorphic-input" placeholder="Password">
+                            <button class="gs-neumorphic-button">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../static/signup.js"></script>
+ 
+</body>
+</html>
+
+{% endblock content %}
